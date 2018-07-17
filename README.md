@@ -26,7 +26,7 @@ The following endpoints are available when you run the application:
 
 ## Hawtio
 
-Endpoint: http://{host}:8095/hawtio
+Endpoint: http://localhost:8095/hawtio
 
 Access to the Hawt.io monitoring console is protected
 ```
@@ -36,7 +36,7 @@ Access to the Hawt.io monitoring console is protected
 
 ## Jolokia
 
-Endpoint: http://{host}:8095/jolokia
+Endpoint: http://localhost:8095/jolokia
 
 This provide conversion from JMX to REST/json. It is required for the hawt.io console
 
@@ -52,14 +52,14 @@ Authentication is enabled.
 
 Endpoints
 ```
- http://{host}:8095/metrics
- http://{host}:8095/env
- http://{host}:8095/health
- http://{host}:8095/mappings
- http://{host}:8095/configprops
- http://{host}:8095/trace
- http://{host}:8095/info
- http://{host}:8095/dump
+ http://localhost:8095/metrics
+ http://localhost:8095/env
+ http://localhost:8095/health
+ http://localhost:8095/mappings
+ http://localhost:8095/configprops
+ http://localhost:8095/trace
+ http://localhost:8095/info
+ http://localhost:8095/dump
 ```
 
 ## Remote shell
@@ -78,5 +78,5 @@ Once connected type camel route-list camel-1 this will display the currently def
 Two camel routes are  defined using differant mechanisms:
 
  1. A timer that logs a message every second defined using 'RouteBuilder'
- 2. A route that exposes a HTTP endpoint and returns 'Hello world', http://{host}:8085, defined in the configuration bean.
+ 2. A route that exposes a HTTP endpoint and returns 'Hello world', http://localhost:8085, defined in the configuration bean.
 
